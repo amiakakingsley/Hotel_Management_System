@@ -1,0 +1,78 @@
+<!Doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Login_Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+
+  </head>
+  <body>
+	
+	  
+	 <div class="container text-center" 
+	 style="padding: 5%; line-height: 3%; max-width: 80%;
+	  color: rgb(0, 0, 64);">
+	     
+		 <h1 class="text"> <img class="img-thumbnail" alt="logo" 
+		 src="/pictures/welcome.jpg" width="100" height="100"> 
+		 Welcome to Fam_Base Hotel</h1>
+		 <h6>Your comfort is our pride</h6>
+		 
+	 </div>
+	 
+	 <div class="container" style="max-width: 80%; text-align: left;">
+			<div class="btn-group btn-group-justified">	 
+				 <a th:href="@{/user/transaction}" class="btn btn-primary">Profile</a>
+				 <a th:href="@{/user/dashboard}" class="btn btn-primary">Transactions</a>
+				 <a th:href="@{/user/deposite}" class="btn btn-primary">Deposite</a>
+				 <a href="he" class="btn btn-primary">Feedback</a>
+				 <a th:href="@{/home/contact}" class="btn btn-primary">Contact Us</a>
+				 <a th:href="@{/admin/adminView}" class="btn btn-danger">Admin Page</a>
+	        </div> 
+	 </div>
+	 
+	  
+		 <div class="container"  style="max-width: 80%; margin: 0 auto; line-height: 100%;">
+		<p>  
+	    <div class="list-group" style="line-height: 60%; max-width: 40ch;">
+		    <a th:href="@{/home/services}" class="list-group-item secondery">
+		    <h4 class="list-group-item-heading">SERVICES</h4> 
+       	    <p class="list-group-item-text">Available Services</p>
+		   </a>
+	   </div>
+       </p>	 
+   
+     <p> 
+		<div class="list-group" style="line-height: 60%; max-width: 40ch;">
+		    <a  th:href="@{/home/food}" class="list-group-item secondery">
+		    <h4 class="list-group-item-heading">FOODS</h4> 
+       	    <p class="list-group-item-text">Available Foods</p>
+		   </a>
+	   </div>
+	</p>
+	   
+	 <p>   <div class="list-group" style="line-height: 60%; max-width: 40ch;">
+		    <a th:href="@{/home/rooms}" class="list-group-item secondery">
+		    <h4 class="list-group-item-heading">BOOK A ROOM</h4> 
+       	    <p class="list-group-item-text">Available Rooms</p>
+		   </a>
+	   </div>
+	 </p>
+	  
+	  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
+    <p>&copy; 2023 Your App. Designed and Developed by 
+		<a href="www.amiakakingsley01@gmail.com">Amiaka kingsley</a></p>
+		
+	  <div class="container " >
+         <a th:href="@{/logout}" class="btn btn-danger">Logout</a>
+      </div>
+	 
+  </footer>
+
+	 </div>
+ </body>
+</html>
